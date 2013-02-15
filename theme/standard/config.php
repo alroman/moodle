@@ -43,6 +43,7 @@ $THEME->sheets = array(
     'message',
     'modules',
     'question',
-    'css3'      /** Sets up CSS 3 + browser specific styles **/
+    'css3',      /** Sets up CSS 3 + browser specific styles **/
+    'theme'
 );
 $THEME->enable_dock = true;

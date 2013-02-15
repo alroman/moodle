@@ -16,16 +16,16 @@ http_path = "/"
 # CSS dir: this is where the SASS files are compiled to CSS
 #   Only a single file should be created: theme.css
 #   this file is then loaded via standard moodle theme method
-css_dir = "theme/base/style"
+css_dir = "theme/standard/style"
 
 # SASS dir: this is where the source files are kept.
 #   Only one file should be compiled directly: theme.scss
 #   this file is responsible for including all dependencies
-sass_dir = "theme/base/sass"
+sass_dir = "theme/standard/sass"
 
 
-images_dir = "theme/base/pix"
-javascripts_dir = "theme/base/javascript"
+images_dir = "theme/standard/pix"
+javascripts_dir = "theme/standard/javascript"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed

@@ -4,80 +4,80 @@
 // Core variables and mixins
 // These are now local theme variables
 // @import "variables"; // Modify this for custom colors, font-sizes, etc
-@import "../packages/bootstrap/lib/mixins";
+@import "../package/bootstrap/lib/mixins";
 
 // CSS Reset
-@import "../packages/bootstrap/lib/reset";
+@import "../package/bootstrap/lib/reset";
 
 // Grid system and page structure
-@import "../packages/bootstrap/lib/scaffolding";
-@import "../packages/bootstrap/lib/grid";
-@import "../packages/bootstrap/lib/layouts";
+@import "../package/bootstrap/lib/scaffolding";
+@import "../package/bootstrap/lib/grid";
+@import "../package/bootstrap/lib/layouts";
 
 // Base CSS
-// @import "../packages/bootstrap/lib/type";
-@import "../packages/bootstrap/lib/code";
-/*@import "../packages/bootstrap/lib/forms";*/
-@import "../packages/bootstrap/lib/tables";
+// @import "../package/bootstrap/lib/type";
+@import "../package/bootstrap/lib/code";
+/*@import "../package/bootstrap/lib/forms";*/
+@import "../package/bootstrap/lib/tables";
 
 // Components: common
-@import "../packages/bootstrap/lib/sprites";
-@import "../packages/bootstrap/lib/dropdowns";
-@import "../packages/bootstrap/lib/wells";
-@import "../packages/bootstrap/lib/component-animations";
-@import "../packages/bootstrap/lib/close";
+@import "../package/bootstrap/lib/sprites";
+@import "../package/bootstrap/lib/dropdowns";
+@import "../package/bootstrap/lib/wells";
+@import "../package/bootstrap/lib/component-animations";
+@import "../package/bootstrap/lib/close";
 
 // Components: Buttons & Alerts
-@import "../packages/bootstrap/lib/buttons";
-@import "../packages/bootstrap/lib/button-groups";
-@import "../packages/bootstrap/lib/alerts"; // Note: alerts share common CSS with buttons and thus have styles in buttons
+@import "../package/bootstrap/lib/buttons";
+@import "../package/bootstrap/lib/button-groups";
+@import "../package/bootstrap/lib/alerts"; // Note: alerts share common CSS with buttons and thus have styles in buttons
 
 // Components: Nav
-@import "../packages/bootstrap/lib/navs";
-@import "../packages/bootstrap/lib/navbar";
-/*@import "../packages/bootstrap/lib/breadcrumbs";*/
-@import "../packages/bootstrap/lib/pagination";
-@import "../packages/bootstrap/lib/pager";
+@import "../package/bootstrap/lib/navs";
+@import "../package/bootstrap/lib/navbar";
+/*@import "../package/bootstrap/lib/breadcrumbs";*/
+@import "../package/bootstrap/lib/pagination";
+@import "../package/bootstrap/lib/pager";
 
 // Components: Popovers
-@import "../packages/bootstrap/lib/modals";
-@import "../packages/bootstrap/lib/tooltip";
-@import "../packages/bootstrap/lib/popovers";
+@import "../package/bootstrap/lib/modals";
+@import "../package/bootstrap/lib/tooltip";
+@import "../package/bootstrap/lib/popovers";
 
 // Components: Misc
-@import "../packages/bootstrap/lib/thumbnails";
-@import "../packages/bootstrap/lib/media";
-/*@import "../packages/bootstrap/lib/labels-badges";*/
-@import "../packages/bootstrap/lib/progress-bars";
-@import "../packages/bootstrap/lib/accordion";
-@import "../packages/bootstrap/lib/carousel";
-@import "../packages/bootstrap/lib/hero-unit";
+@import "../package/bootstrap/lib/thumbnails";
+@import "../package/bootstrap/lib/media";
+/*@import "../package/bootstrap/lib/labels-badges";*/
+@import "../package/bootstrap/lib/progress-bars";
+@import "../package/bootstrap/lib/accordion";
+@import "../package/bootstrap/lib/carousel";
+@import "../package/bootstrap/lib/hero-unit";
 
 // Utility classes
-@import "../packages/bootstrap/lib/utilities"; // Has to be last to override when necessary
+@import "../package/bootstrap/lib/utilities"; // Has to be last to override when necessary
 
 
 // RESPONSIVE CLASSES
 // ------------------
 
-/*@import "../packages/bootstrap/lib/responsive-utilities";*/
+/*@import "../package/bootstrap/lib/responsive-utilities";*/
 
 
 // MEDIA QUERIES
 // ------------------
 
 // Large desktops
-@import "../packages/bootstrap/lib/responsive-1200px-min";
+@import "../package/bootstrap/lib/responsive-1200px-min";
 
 // Tablets to regular desktops
-@import "../packages/bootstrap/lib/responsive-768px-979px";
+@import "../package/bootstrap/lib/responsive-768px-979px";
 
 // Phones to portrait tablets and narrow desktops
-@import "../packages/bootstrap/lib/responsive-767px-max";
+@import "../package/bootstrap/lib/responsive-767px-max";
 
 
 // RESPONSIVE NAVBAR
 // ------------------
 
 // From 979px and below, show a button to toggle navbar contents
-@import "../packages/bootstrap/lib/responsive-navbar";
+@import "../package/bootstrap/lib/responsive-navbar";
