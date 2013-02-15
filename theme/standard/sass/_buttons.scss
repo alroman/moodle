@@ -1,0 +1,14 @@
+
+// Override buttons with bootsrap styling
+//
+input[type="submit"] {
+    @extend .btn;
+}
+
+input[name="cancel"] {
+    @extend .btn-danger;
+}
+
+input[name="submitbutton"] {
+    @extend .btn-success;
+}

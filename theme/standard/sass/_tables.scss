@@ -1,0 +1,9 @@
+
+// Modify forum table to inherit bootstrap styles
+
+.userenrolment,
+.forumheaderlist {
+    @extend .table;
+    @extend .table-striped;
+    @extend .table-bordered;
+}

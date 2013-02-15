@@ -1,0 +1,97 @@
+
+#intro {
+    @extend .alert;
+    @extend .alert-info;
+}
+
+
+.forumpost {
+    @include border-radius(5px);
+    @include single-box-shadow( $color: #CCC, $blur: 2px );
+    overflow: hidden;
+    text-align: left;
+
+    &.firstpost .maincontent {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    & .topic {
+        background-color: #FFF;
+        border-bottom: 1px solid #CCC;
+        padding: 5px;
+        padding-left: 20px;
+    }
+
+    & .options {
+        padding-top: 5px;
+    }
+
+    & .content {
+        padding: 5px;
+    }
+
+    & .commands {
+        padding: 0 20px;
+        margin-bottom: 4px;
+        color: #EEEEEE;
+        & > a {
+            @extend .btn;
+            @extend .btn-small;
+            line-height: 15px;
+        }
+        & a[href*="delete"] {
+            @extend .btn-danger;
+        }
+        & a[href*="reply"] {
+            @extend .btn-primary;
+        }
+    }
+
+    & .row.side {
+        & .left {
+            background: #EEEEEE;
+        }
+        border-top:             1px solid #CCC;
+        background: #EEEEEE;
+        border: {
+            left: 1px solid white;
+            bottom: 1px solid white;
+            right: 1px solid white;
+        }
+    }
+    & .row .left {
+        background-color: white;
+    }
+}
+
+.forumheaderlist {
+    & .starter > a {
+        font-weight: bold;
+    }
+    & .replies > a {
+        @extend .badges;
+        @extend .badges-info;
+    }
+    & .lastpost {
+        & br + a {
+            @extend .labels;
+            @extend .labels-info;
+        }
+    }
+}
+
+/** Forum **/
+
+.forumpost {margin-top:15px;border:1px solid #DDD;border-collapse:separate;}
+.forumpost td {border-width:0px;}
+/*.forumpost .topic {background-color:#C8C9C7;}*/
+.forumpost .topic .subject {font-weight:bold;}
+.forumpost .topic .author {font-size:0.8em;}
+.forumpost .left {background-color:#EEE;padding:4px;text-align:center;vertical-align:top;width:35px;}
+.forumpost .content .commands {font-size:0.9em;clear:both;padding-top:0.5em;text-align:right;}
+.forumpost .content .link {font-size:0.9em;}
+.forumpost .content .footer {font-size:0.9em;padding-top:0.5em;text-align:right;}
+
+.forumpost .row {
+    margin-left: 0;
+}

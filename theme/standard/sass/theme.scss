@@ -1,0 +1,52 @@
+//
+// Moodle SASS demo
+// --------------------------------------------------
+
+
+// This defines how SASS files will be loaded, the order
+// matters since later file can override previous ones
+
+// File naming convention:
+//
+//      '_required' only contain @import directives, they
+//      define the loading order of SASS files
+//
+//      '_variables' only contain variable definitions and
+//      are usually imported before components
+//
+//      '_<component>' files should handle a single component
+
+
+
+// Compass libraries
+// These provides a library of useful mixins, for full
+// reference see: http://compass-style.org/
+// These only work if you're compiling with compass
+// --------------------------------------------------
+@import "compass/css3";
+
+// Load bootstrap variables
+// Modify this for custom colors, font-sizes, etc
+// This affects how Bootstrap is compiled
+// --------------------------------------------------
+@import "variables";
+
+
+// Load bootstrap library
+// It's possible to turn ON/OFF individual components
+// in this file
+// --------------------------------------------------
+@import "bootstrap";
+
+
+// Load standard theme
+// This will override and extend bootstrap elements
+// --------------------------------------------------
+@import "required";
+
+
+// Collect all 'styles.scss' files that will be compiled
+// These are from external depencies
+// --------------------------------------------------
+@import "external";
+
