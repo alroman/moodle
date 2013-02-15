@@ -300,7 +300,7 @@ table#tag-management-list {margin: 10px auto;width: 80%;}
 /**
  * Tabs
  */
-.tabtree ul {text-align:center;}
+/*.tabtree ul {text-align:center;}
 .tabtree .tabrow0 {width:100%;margin:1em 0px;}
 .tabtree .tabrow0 li {margin-right:-4px;}
 .tabtree .tabrow0 li.here {font-weight: bold;}
@@ -343,7 +343,7 @@ table#tag-management-list {margin: 10px auto;width: 80%;}
 .ie6 .tabtree .tabrow0 li.onerow {margin-right: 0;}
 .ie6 .tabtree .tabrow0 a {padding: 0 0 0 13px;}
 .ie6 .tabtree .tabrow0 a span {padding: 12px 1em 4px 0;}
-.ie6 .tabtree .tabrow0 div {top: 3.5em;padding: 0.2em 0;}
+.ie6 .tabtree .tabrow0 div {top: 3.5em;padding: 0.2em 0;}*/
 
 /**
  * Comment

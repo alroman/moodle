@@ -5,102 +5,17 @@
 
 // BASE CLASS
 // ----------
-
 .tabrow0 {
-  margin-left: 0;
-  margin-bottom: $baseLineHeight;
-  list-style: none;
+  @extend .nav;
+  @extend .nav-tabs;
 }
 
-// Make links block level
-.tabrow0 > li > a {
-  display: block;
-}
-.tabrow0 > li > a:hover {
-  text-decoration: none;
-  background-color: $grayLighter;
-}
-
-// Prevent IE8 from misplacing imgs
-// See https://github.com/h5bp/html5-boilerplate/issues/984#issuecomment-3985989
-.tabrow0 > li > a > img {
-  max-width: none;
-}
-
-// Redeclare pull classes because of specifity
-.tabrow0 > .pull-right {
-  float: right;
-}
-
-// Nav headers (for dropdowns and lists)
-.nav-header {
-  display: block;
-  padding: 3px 15px;
-  font-size: 11px;
-  font-weight: bold;
-  line-height: $baseLineHeight;
-  color: $grayLight;
-  text-shadow: 0 1px 0 rgba(255,255,255,.5);
-  text-transform: uppercase;
-}
-// Space them out when they follow another list item (link)
-.tabrow0 li + .nav-header {
-  margin-top: 9px;
-}
-
-
-// TABS AND PILLS
-// -------------
-
-// Common styles
-.tabrow0,
-.nav-pills {
-  @include clearfix();
-}
-.tabrow0 > li,
-.nav-pills > li {
-  float: left;
-}
-.tabrow0 > li > a,
-.nav-pills > li > a {
-  padding-right: 12px;
-  padding-left: 12px;
-  margin-right: 2px;
-  line-height: 14px; // keeps the overall height an even number
-}
-
-// TABS
-// ----
-
-// Give the tabs something to sit on
-.tabrow0 {
-  border-bottom: 1px solid #ddd;
-        & .selected {
-            @extend .active;
-        }
-}
-// Make the list-items overlay the bottom border
-.tabrow0 > li {
-  margin-bottom: -1px;
-}
-// Actual tabs (as links)
-.tabrow0 > li > a {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  line-height: $baseLineHeight;
-  border: 1px solid transparent;
-  @include border-radius(4px 4px 0 0);
-  &:hover {
-    border-color: $grayLighter $grayLighter #ddd;
-  }
-}
-// Active state, and it's :hover to override normal :hover
-.tabrow0 > .active > a,
-.tabrow0 > .active > a:hover {
+.tabrow0 > .selected > a,
+.tabrow0 > .selected > a:hover,
+.tabrow0 > .selected > a:focus {
   color: $gray;
   background-color: $bodyBackground;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
 }
-
