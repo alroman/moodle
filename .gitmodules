@@ -1,0 +1,3 @@
+[submodule "theme/standard/package/bootstrap"]
+	path = theme/standard/package/bootstrap
+	url = git@github.com:jlong/sass-twitter-bootstrap.git
