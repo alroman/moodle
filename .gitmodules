@@ -1,0 +1,3 @@
+[submodule "theme/sassy/package/bootstrap"]
+	path = theme/sassy/package/bootstrap
+	url = https://github.com/jlong/sass-bootstrap.git
