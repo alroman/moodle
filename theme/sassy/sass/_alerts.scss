@@ -1,0 +1,95 @@
+//
+// ALERTS
+// --------------------------------------------------
+
+@import "bootstrap/lib/alerts";
+
+/// overrides
+
+
+
+
+// Only style alerts for main course content
+#maincontent {
+        /*~ .generalbox:not(.info):not(#intro):not(.supportconsole)*/
+    ~ .noticebox {
+        @extend .alert;
+        @extend .alert-warning;
+    }
+    
+    ~ #notice.generalbox:not(.info):not(#intro) {
+        @extend .alert;
+        @extend .alert-info;
+    }
+}
+
+.box {
+    &.errorbox {
+        @extend .alert;
+        @extend .alert-danger;
+    }
+    &.noticebox {
+        @extend .alert;
+        @extend .alert-warning;
+        
+        #tool_uclacourserequestor & {
+            @extend .alert-success;
+
+        }
+    }
+}
+
+.course-content {
+    .noticebox,
+    .generalbox {
+        @extend .alert;
+        @extend .alert-warning;
+    }
+}
+
+.pagelayout-redirect {
+    #content,
+    .content {
+        padding: 10%;
+    }
+}
+
+#uclacourserequestor_notice {
+    color: #394A6E;
+}
+
+.adminwarning {
+    @extend .alert;
+    @extend .alert-warning;
+}
+
+// Syllabus alertbox
+// --------------------------------------------------
+
+// This also normalizes the form so that it doesn't look out of place
+.ucla-format-notice-box {
+    // This will use the 'info' clor
+    @extend .alert;
+    @extend .alert-info;
+
+        .mform {
+            .felement {
+                margin-left: 0;
+            }
+            
+            input[name="yesbutton"] {
+                @extend .btn;
+                @extend .btn-success;
+            }
+            input[name="laterbutton"] {
+                @extend .btn;
+                @extend .btn-default;
+            }
+            input[name="nobutton"] {
+                @extend .btn;
+                @extend .btn-default;
+            }
+        }
+
+}
+

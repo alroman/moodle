@@ -1,0 +1,28 @@
+//
+// FOOTER
+// --------------------------------------------------
+
+#page-footer {
+    border-top: 1px solid #ddd;
+    background-color: #FAFAFA;
+    
+    .footer-wrapper {
+        background-color: #573d7d;
+        color: white;
+        width: 30%;
+        margin-left: 60%;
+        text-align: right;
+        padding: 20px;
+        
+        a {
+            color: #CDBFE3;
+
+            &:link {color: #CDBFE3}
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
+
